@@ -38,8 +38,8 @@ CREATE TABLE `posts` (
   `image` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `title` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `qty_room` int(11) DEFAULT NULL,
-  `updated_at` timestamp NOT NULL DEFAULT current_timestamp(),
-  `created_at` timestamp NOT NULL DEFAULT current_timestamp()
+  `updated_at` timestamp NOT NULL,
+  `created_at` timestamp NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
